@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="author" content="Carlos Sampedro Menéndez" />
+    <meta name="description" content="Registration Page of Visit Naples" />
+    <meta name="keywords" content="index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Visit Naples - Registry</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    
+    <link rel="stylesheet" href="style/registry.css">
+    <link rel="icon" href="multimedia/images/margheritaIcon.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Visit Naples</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" accesskey="H" tabindex="1">Home</a></li>
+                    <li><a href="gastronomy.html" accesskey="G" tabindex="2">Gastronomy</a></li>
+                    <li><a href="sites.html" accesskey="S" tabindex="3">Sites</a></li>
+                    <li><a href="football.html" accesskey="F" tabindex="4">Football</a></li>
+                    <li><a href="meteorology.html" accesskey="M" tabindex="5">Meteorology</a></li>
+                    <li><a href="game.html" accesskey="A" tabindex="6">Game</a></li>
+                    <li><a href="reservations.html" accesskey="R" tabindex="7">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <p class="breadcrumbs">You are in: <a href="index.html">Home</a> >> 
+    <a href="registry.html"><span class="highlight">Registry</span></a></p>  
+
+    <main>
+        <section class="registration-section">
+            <div class="grid-container">
+                <form id="registrationForm" class="registration-form">
+                    <h2>Register to access exclusive Tour Reservations</h2>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                    <p id="message" class="message"></p>
+                </form>
+                <div class="image-container">
+                    <img id="registry-image" class="registry-image" src="multimedia/images/registryNaples.jpg" alt="Naples Views">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Visit Naples. All rights reserved.</p>
+    </footer>
+
+	<script src="js/registry.js"></script>
+	
+</body>
+</html>

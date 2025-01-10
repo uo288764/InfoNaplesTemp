@@ -1,0 +1,132 @@
+/* style.css */
+
+/* Style for all app bodies */
+body {
+    background-color: lightgrey; /* Fondo gris claro para toda la página */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    overflow-x: hidden; /*Blocks lateral scrolling, for usability*/
+}
+
+
+/* Global style for all images */
+img {
+    border-radius: 8px; 
+    max-width: 100%; 
+    height: auto; 
+    display: block; /* No white spaces below the image */
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    background-color: #003366; 
+    padding: 20px; /* Internal spacing between elements of the header */
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2em; 
+}
+
+.header-container nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Links of the header*/
+.header-container nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: azure;
+    font-size: 1.2em; /* Tamaño de fuente de los enlaces */
+}
+
+/*Links of the header borders*/
+.header-container nav ul li {
+    border-right: 1px solid white;
+    
+}
+
+/*Links of the header hover action (mouse over)*/
+.header-container nav ul li:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+
+}
+
+/*Last link (child) of the header*/
+.header-container nav ul li:last-child {
+    border-right: none;
+}
+
+/* Style for main content */
+main {
+    padding: 20px; /* Internal spacing between elements */
+    max-width: 1200px; /* Max pixels of the content */
+    margin: auto; /*Center content */
+}
+
+/*H2 titles style*/
+h2 {
+    color: #333; 
+    font-size: 1.8em; 
+}
+
+/*Article styles*/
+article {
+    margin-bottom: 20px;
+    padding: 15px; /* Espaciado interno */
+    background-color: white; 
+    border-radius: 8px; 
+
+}
+
+/* Footer */
+footer {
+    background-color: grey; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative; /*Position relative to the page*/
+    width: 100%; /*Takes the whole page*/
+}
+
+/*Breadcrumbs (migas), actual page breadcrumb style*/
+.highlight {
+    text-decoration: underline; 
+}
+
+/* Breadcrumbs (migas) style */
+.breadcrumbs {
+    display: block; 
+    font-size: 1rem;
+    color: #333;
+    margin: 20px 10px;
+    border-left: 4px ; 
+    padding-left: 10px;
+    margin-bottom: 0px; /*no down margin, bc it was too much*/
+}
+
+.breadcrumbs a {
+    text-decoration: none; 
+    color: #0066cc; 
+}
+
+p.breadcrumbs {
+	background-color: white;
+	border-radius:10px;
+    padding:10px;
+    padding-right: 20px;
+    margin-left:30px; 
+    display:inline-block;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* index.css */
+
+/* Main image style */
+.main-image {
+    display: block;
+    max-width: 100%; 
+    height: auto; 
+    margin: 20px auto; 
+}
+
+/* Register section */
+.registration-section {
+    background-color: #ffffff; 
+    padding: 20px; 
+    margin: 20px auto; /* centering */
+    border-radius: 10px; 
+    max-width: 600px; 
+    text-align: center; /* center text */
+}
+
+/* Registry section title style */
+.registration-section h2 {
+    color: #333; 
+    font-size: 1.8em; 
+}
+
+/* Registry section paragraph style */
+.registration-section p {
+    color: #666; 
+    font-size: 1.1em; 
+    margin-bottom: 20px; 
+}
+
+/* Registry button */
+.register-button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.register-button:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}

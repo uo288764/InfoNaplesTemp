@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*gastronomy.css**/
+
+.margherita-article .margherita-image,
+.pizza-fritta-article .pizza-fritta-image,
+.pasta-e-patate-article .pasta-e-patate-image,
+.ragu-article .ragu-image,
+.parmigiana-article .parmigiana-image,
+.frittata-article .frittata-image {
+    display: block;
+    max-width: 40%; 
+    height: auto; 
+    margin: 20px; 
+    align-content: left;
+}
+
+/*Article designs/*/
+.margherita-article h2,
+.pizza-fritta-article h2,
+.pasta-e-patate-article h2,
+.ragu-article h2,
+.parmigiana-article h2,
+.frittata-article h2 { 
+    margin-left: 20px;
+    color: #0066cc;
+}
+
+.margherita-article h3,
+.pizza-fritta-article h3,
+.pasta-e-patate-article h3,
+.ragu-article h3,
+.parmigiana-article h3,
+.frittata-article h3 { 
+    color: #0066cc;
+}
+
+ul.ingredient-list {
+    list-style-type: none; /* Removes the dots of the lists*/
+    margin-left: none;
+}
+
+ul.ingredient-list li::before {
+    content: "- "; /* Adds dash yo list ingredients*/
+}
+
+/* All h3 and p to 30 px */
+h3, p {
+    margin-left: 30px;
+}

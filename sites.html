@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carlos Sampedro Menéndez" />
+    <meta name="description" content="Home Page of Visit Naples" />
+    <meta name="keywords" content="index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Naples - Sites</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sites.css">
+    <link rel="icon" href="multimedia/images/margheritaIcon.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/sites.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Visit Naples</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" accesskey="H" tabindex="1">Home</a></li>
+                    <li><a href="gastronomy.html" accesskey="G" tabindex="2">Gastronomy</a></li>
+                    <li><a href="sites.html" accesskey="S" tabindex="3">Sites</a></li>
+                    <li><a href="football.html" accesskey="F" tabindex="4">Football</a></li>
+                    <li><a href="meteorology.html" accesskey="M" tabindex="5">Meteorology</a></li>
+                    <li><a href="game.html" accesskey="A" tabindex="6">Game</a></li>
+                    <li><a href="reservations.html" accesskey="R" tabindex="7">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <p class="breadcrumbs">You are in: <a href="index.html">Home</a> >> 
+    <a href="sites.html"><span class="highlight">Sites</span></a></p>  
+
+    <main>
+        <section>
+            <div id="sitesTable"></div> <!-- XML info -->
+       		
+       		<br></br>
+       		<label for="siteCombobox">Choose a site:</label>
+                        <select id="site" name="site" onchange="updateInformation()">
+                            <option value="duomo" selected>Duomo San Gennaro</option>
+                            <option value="plebiscito" >Piazza del Plebiscito</option>
+                            <option value="castel" >Castel dell'Ovo</option>
+                            <option value="vesuvius">Vesuvius Volcano</option>
+                            <option value="museum">National Archaeological Museum</option>
+                            <option value="palazzo">Palazzo Reale di Napoli</option>
+                            <option value="spaccanapoli">Spaccanapoli</option>
+							<option value="quartieri">Quartieri Spagnoli</option>                            
+                        </select>
+       		<!-- Duomo info set as default -->
+       		<div class="site-info">
+			    <h2 id="site-name"></h2>
+			    <br>
+			    <div class="content">
+
+        <img id="site-image" class="site-image" src="multimedia/images/sitesDuomo.jpg" alt="Image of the Duomo San Gennaro">
+
+        <iframe id="site-map" class="site-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.880520733056!2d14.256745575161442!3d40.85254692900089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b086a71dc7939%3A0x8bad90ad52187adc!2sCatedral%20de%20N%C3%A1poles!5e0!3m2!1ses!2sit!4v1732538513268!5m2!1ses!2sit" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+     <p id="site-price">Price: Free!</p>
+			    <h3 id="site-schedule">Opening Hours: 8:00 AM - 7:00 PM</h3>
+			    <br>
+			</div>
+       		
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Visit Naples. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

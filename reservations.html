@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Carlos Sampedro Menéndez" />
+    <meta name="description" content="Reservations of Visit Naples" />
+    <meta name="keywords" content="index" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Visit Naples - Reservations</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reservations.css">
+    <link rel="icon" href="multimedia/images/margheritaIcon.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/reservations.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Visit Naples</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" accesskey="H" tabindex="1">Home</a></li>
+                    <li><a href="gastronomy.html" accesskey="G" tabindex="2">Gastronomy</a></li>
+                    <li><a href="sites.html" accesskey="S" tabindex="3">Sites</a></li>
+                    <li><a href="football.html" accesskey="F" tabindex="4">Football</a></li>
+                    <li><a href="meteorology.html" accesskey="M" tabindex="5">Meteorology</a></li>
+                    <li><a href="game.html" accesskey="A" tabindex="6">Game</a></li>
+                    <li><a href="reservations.html" accesskey="R" tabindex="7">Reservations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <p class="breadcrumbs">You are in: <a href="reservations.html">Home</a> >> 
+    <a href="reservations.html"><span class="highlight">Reservations</span></a></p>
+
+    <main>
+        <h1>Make your reservation</h1>
+        
+        <div class="reservation-container">
+            <div class="reservation-section-container">
+                <section class="reservation-section">
+                    <!-- Form -->
+                    <form id="reservationForm">
+                        <!-- Activity Selection -->
+                        <label for="reservationsComboBox">Choose an activity:</label>
+                        <select id="activities" name="activities" onchange="updateInformation()" required>
+                            <option value="pompeii" selected>Pompeii</option>
+                            <option value="herculaneum">Herculaneum</option>
+                            <option value="historicCenter">Naples Historic Center Tour</option>
+                            <option value="vesuvius">Mount Vesuvius</option>
+                            <option value="caserta">Caserta Royal Palace</option>
+                        </select>
+                        
+                        <br></br>
+                        
+                        <!-- Date Selection -->
+                        <label for="dateInput">Choose a date:</label>
+                        <input type="date" id="dateInput" name="dateInput" required>
+                        
+                        <br></br>
+                        
+                        <!-- Hour Selection -->
+                        <label for="hourCombobox">Choose an hour:</label>
+                        <select id="hour" name="hour" required>
+                            <option value="nine">9:00</option>
+                            <option value="eleven" selected>11:00</option>
+                            <option value="one" >13:00</option>
+                            <option value="three">15:00</option>
+                        </select>
+                        
+                        <br></br>
+
+                        <!-- Email Input -->
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>  
+                        <br><br>
+                        
+                        <label for="repeatEmail">Repeat Email:</label>
+                        <input type="email" id="repeatEmail" name="repeatEmail" required> 
+                        <br><br>
+
+                        <!-- Number of People Input -->
+                        <label for="numberOfPeople">Number of people:</label>
+                        <input type="number" value="1" min="1" max="10" id="numberOfPeople" name="numberOfPeople" required>
+                        <br><br>
+
+                        <div class="confirm-button-container">
+                            <button class="confirm-button" type="submit">Confirm</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Activity Info -->
+            <section class="reservation-info-section">
+                <img id="activityImage" class="activityImage" src="multimedia/images/pompeii.jpg" alt="Activity Image">
+                <p id="activityInformation">Pompeii: Explore the ruins of this iconic ancient city.</p>
+                <p id="activityPrice">Price: 21€ per person.</p>
+            </section>
+        </div>
+        
+        <div class="registration-notice">
+	        <p>You need to be registered to make a reservation. 
+	           Not registered yet? <a href="registry.html" class="register-link">Register now</a>
+	        </p>
+	    </div>
+        
+        <div id="message" class="message"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Visit Naples. All rights reserved.</p>
+    </footer>
+</body>
+</html>

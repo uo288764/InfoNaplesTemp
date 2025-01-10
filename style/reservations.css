@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.reservation-container {
+    display: flex; /*flex layout on windowbuilder*/
+    justify-content: space-between;
+    margin: 20px;
+    background: lightgrey;
+}
+
+.reservation-section-container {
+    background-color: lightgrey;
+    margin-left: 35px;
+}
+
+.reservation-section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px; /* space of element between its content and its border*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   background-color: white;
+  
+}
+
+.reservation-section label {
+    margin: 10px 0 5px; /* Space above and below labels */
+
+}
+
+.reservation-section input[type="text"],
+.reservation-section input[type="date"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-section input[type="email"],
+.reservation-section select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-section input[type="number"] {
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px; /* Empuja el spinner a la derecha */
+}
+
+.reservation-info-section {
+    flex: 2;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.activityImage {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Confirm button */
+.confirm-button-container {
+    display: flex;
+    justify-content: flex-end; /*puts elements in the end of the container*/
+
+}
+
+.confirm-button {
+	align-content:right; /*aligns to the right of the container*/
+    display: inline-block; /*inline element, it does not start on a new line and
+     is placed next to other inline elements (if there is enough space)*/
+    padding: 10px 20px; /*amplia el blanco de la pagina*/
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    border:none;
+    border-radius: 5px; 
+}
+
+.confirm-button:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
+
+.registration-notice {
+    text-align: center;
+    margin-left:65px; /*Aligned with form*/
+    margin-right:65px;
+    padding: .5rem; /*Keeps white a little bit over letters*/
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.register-link {
+    color: #007BFF;
+    text-decoration: underline;
+    
+}
+
+.register-link:hover {
+    color: #0056b3;
+}

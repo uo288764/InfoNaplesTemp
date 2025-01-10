@@ -1,0 +1,83 @@
+/* registry.css */
+
+
+.registration-section {
+    max-width: 1200px; /* Max width of the section */
+    margin: 20px auto; /* Center the section */
+}
+
+.grid-container {
+    display: grid; /*  grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between columns */
+}
+
+.registration-form {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.registration-form h2 {
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+
+.registration-form input {
+    width: calc(100% - 20px); 
+    padding: 10px; 
+    margin: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+/* Form button */
+.registration-form button {
+    width: calc(100% - 20px); /* Full width minus margins */
+    padding: 10px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /* Change cursor */
+    transition: background-color 0.3s; /* Transition */
+    margin: 10px; 
+}
+
+.registration-form button:hover {
+    background-color: #0056b3; /* Color on hover */
+}
+
+/* Image container */
+.image-container {
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow on the image */
+}
+
+/* Response message */
+.message {
+    font-size: 14px;
+    color: red; /* Default color for errors */
+    margin-top: 10px;
+    display: block;
+}
+
+.error {
+    color: red; /* Error messages in red */
+}
+
+.success {
+    color: green; /* Success messages in green */
+}

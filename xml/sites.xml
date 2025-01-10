@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<sites>
+    <site>
+        <name>Duomo di San Gennaro</name>
+        <description>Home to the city's patron saint, San Gennaro, this magnificent cathedral showcases stunning Gothic and Baroque architecture. Don’t miss the Chapel of the Treasure of San Gennaro and its relics.</description>
+    </site>
+    <site>
+        <name>Piazza del Plebiscito</name>
+        <description>A grand square in Naples, known for its historical significance and beautiful architecture.</description>
+    </site>
+    <site>
+        <name>Castel dell'Ovo</name>
+        <description>The oldest standing fortification in Naples, located on the sea, offering stunning views.</description>
+    </site>
+    <site>
+        <name>Vesuvius Volcano</name>
+        <description>One of the world’s most famous active volcanoes, offering breathtaking views of Naples and the Bay of Naples. Visitors can hike to the crater for a unique experience.</description>
+    </site>
+    <site>
+        <name>National Archaeological Museum</name>
+        <description>Home to one of the most impressive collections of Greco-Roman antiquities, including artifacts from Pompeii and Herculaneum.</description>
+    </site>
+    <site>
+        <name>Palazzo Reale di Napoli</name>
+        <description>A grand royal palace that was once home to Spanish and later Neapolitan monarchs. It offers opulent rooms and expansive gardens with views of the Gulf of Naples.</description>
+    </site>
+    <site>
+        <name>Spaccanapoli</name>
+        <description>A narrow, bustling street that cuts through the heart of Naples, known for its vibrant shops, churches, and traditional Neapolitan pizzerias.</description>
+    </site>
+    <site>
+        <name>Quartieri Spagnoli</name>
+        <description>Known for its narrow alleys, vibrant street art, and local life, the Spanish Quarter offers an authentic glimpse of traditional Neapolitan culture.</description>
+    </site>
+</sites>
